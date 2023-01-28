@@ -1,0 +1,269 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: estados.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "estados.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "estados"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : estados
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" in Library work.
+Architecture behavioral of Entity div00 is up to date.
+Compiling vhdl file "D:/Documentos/ESCOM/DSD/Practica9/practica9_secuencia/estados.vhd" in Library work.
+Entity <estados> compiled.
+Entity <estados> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <estados> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <div00> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <estados> in library <work> (Architecture <behavioral>).
+Entity <estados> analyzed. Unit <estados> generated.
+
+Analyzing Entity <div00> in library <work> (Architecture <behavioral>).
+Entity <div00> analyzed. Unit <div00> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <div00>.
+    Related source file is "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd".
+    Found 1-bit register for signal <clkout>.
+    Found 22-bit comparator less for signal <clkout$cmp_lt0000> created at line 50.
+    Found 22-bit up counter for signal <contador>.
+    Found 22-bit comparator less for signal <contador$cmp_lt0000> created at line 45.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 Comparator(s).
+Unit <div00> synthesized.
+
+
+Synthesizing Unit <estados>.
+    Related source file is "D:/Documentos/ESCOM/DSD/Practica9/practica9_secuencia/estados.vhd".
+WARNING:Xst:1780 - Signal <estado_futuro> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <estado_presente>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 6                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | CLR                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | a                                              |
+    | Power Up State     | a                                              |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <led>.
+    Found 1-bit register for signal <entS>.
+    Found 8-bit register for signal <$mux0000>.
+    Found 1-bit register for signal <entrada>.
+    Found 8-bit 4-to-1 multiplexer for signal <mux0000$mux0000> created at line 65.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   3 D-type flip-flop(s).
+Unit <estados> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 22-bit up counter                                     : 1
+# Registers                                            : 5
+ 1-bit register                                        : 4
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 22-bit comparator less                                : 2
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <estado_presente/FSM> on signal <estado_presente[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ a     | 000001
+ b     | 000010
+ c     | 000100
+ d     | 001000
+ e     | 010000
+ f     | 100000
+-------------------
+WARNING:Xst:2257 - FF/Latches <FFd6> is unconnected in block <FSM>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 22-bit up counter                                     : 1
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <estado_presente_FSM_FFd6> of sequential type is unconnected in block <estados>.
+
+Optimizing unit <estados> ...
+  implementation constraint: INIT=r	 : estado_presente_FSM_FFd4
+  implementation constraint: INIT=r	 : estado_presente_FSM_FFd3
+  implementation constraint: INIT=r	 : estado_presente_FSM_FFd1
+  implementation constraint: INIT=r	 : estado_presente_FSM_FFd2
+  implementation constraint: INIT=r	 : estado_presente_FSM_FFd5
+
+Optimizing unit <div00> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : estados.ngr
+Top Level Output File Name         : estados
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 205
+#      AND2                        : 97
+#      AND3                        : 2
+#      AND6                        : 1
+#      AND8                        : 2
+#      GND                         : 1
+#      INV                         : 55
+#      OR2                         : 26
+#      XOR2                        : 21
+# FlipFlops/Latches                : 39
+#      FD                          : 23
+#      FDC                         : 13
+#      FDCE                        : 3
+# IO Buffers                       : 23
+#      IBUF                        : 12
+#      OBUF                        : 11
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.84 secs
+ 
+--> 
+
+Total memory usage is 266700 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

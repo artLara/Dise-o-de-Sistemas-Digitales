@@ -1,0 +1,131 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK2: 19=clk00.p
+----------------- B l o c k 0 ------------------
+PLApt(16/56), Fanin(21/38), Clk(1/3), Bct(0/4), Pin(0/6), Mcell(16/16)
+PLApts[16/56] () () () () () () () () () () 32 () () 33 () () 26 () () 27 () () 34 () () 28 () () 35 () () 36 
+              () () 37 () () 38 () () 39 () () 29 () () 30 () () 31 () () 40 () () 41
+Fanins[21] P00/contador<0>.n P00/contador<10>.n P00/contador<11>.n P00/contador<12>.n P00/contador<13>.n 
+           P00/contador<14>.n P00/contador<15>.n P00/contador<16>.n P00/contador<17>.n P00/contador<18>.n 
+           P00/contador<19>.n P00/contador<1>.n P00/contador<20>.n P00/contador<2>.n P00/contador<3>.n 
+           P00/contador<4>.n P00/contador<5>.n P00/contador<6>.n P00/contador<7>.n P00/contador<8>.n 
+           P00/contador<9>.n
+clk[1] clk00 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [P00/contador<21>(160)] [P00/contador<20>(159)] [P00/contador<19>(155)] [P00/contador<18>(154)]  
+           [P00/contador<17>(153)] [P00/contador<16>(152)] [P00/contador<15>(151)] [P00/contador<14>(149)]  
+           [P00/contador<13>(146)] [P00/contador<12>(145)] [P00/contador<11>(158)] [P00/contador<10>(157)]  
+           [P00/contador<9>(156)] [P00/contador<8>(150)] [P00/contador<7>(148)] [P00/contador<6>(147)] 
+Signal[16] [ 0: P00/contador<12>(145)  ][ 1: P00/contador<13>(146)  ][ 2: P00/contador<6>(147) (143)  ][ 3:  
+           P00/contador<7>(148) (142)  ][ 4: P00/contador<14>(149)  ][ 5: P00/contador<8>(150) (140)  ][ 6:  
+           P00/contador<15>(151)  ][ 7: P00/contador<16>(152)  ][ 8: P00/contador<17>(153)  ][ 9:  
+           P00/contador<18>(154)  ][ 10: P00/contador<19>(155)  ][ 11: P00/contador<9>(156) (139)  ][ 12:  
+           P00/contador<10>(157) (138)  ][ 13: P00/contador<11>(158) (137)  ][ 14: P00/contador<20>(159)  ] 
+           [ 15: P00/contador<21>(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(5/56), Fanin(5/38), Clk(1/3), Bct(0/4), Pin(0/8), Mcell(6/16)
+PLApts[5/56] () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () () 20 
+             () () 21 () () 23 () () 24 () () () () () () () () () () () () () () 25
+Fanins[ 5] P00/contador<0>.n P00/contador<1>.n P00/contador<2>.n P00/contador<3>.n P00/contador<4>.n
+clk[1] clk00 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [P00/contador<5>(176)] [P00/contador<4>(171)] [P00/contador<3>(170)] [P00/contador<2>(169)]  
+           [P00/contador<1>(168)] [P00/contador<0>(167)] 
+Signal[ 6] [ 0: (2)  ][ 1:  ][ 2: (3)  ][ 3: (4)  ][ 4: (5)  ][ 5:  ][ 6: P00/contador<0>(167)  ][ 7:  
+           P00/contador<1>(168)  ][ 8: P00/contador<2>(169)  ][ 9: P00/contador<3>(170)  ][ 10:  
+           P00/contador<4>(171)  ][ 11: (6)  ][ 12: (7)  ][ 13: (9)  ][ 14: (10)  ][ 15:  
+           P00/contador<5>(176)  ]
+----------------- B l o c k 2 ------------------
+----------------- B l o c k 3 ------------------
+----------------- B l o c k 4 ------------------
+----------------- B l o c k 5 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [clk00(38)] 
+Signal[ 1] [ 0: (34)  ][ 1: (35)  ][ 2:  ][ 3: clk00(38)  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ] 
+           [ 11: (39)  ][ 12: (40)  ][ 13: (41)  ][ 14: (42)  ][ 15: (43)  ]
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(2/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [C(116)] [CLR(118)] 
+Signal[ 2] [ 0: (112)  ][ 1: (113)  ][ 2:  ][ 3: (114)  ][ 4:  ][ 5: (115)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ] 
+           [ 10:  ][ 11: C(116)  ][ 12: (117)  ][ 13: CLR(118)  ][ 14: (119)  ][ 15:  ]
+----------------- B l o c k 9 ------------------
+PLApt(11/56), Fanin(11/38), Clk(0/3), Bct(2/4), Pin(4/9), Mcell(4/16)
+PLApts[11/50] 1 3 5 7 17 9 18 10 13 () () () () () () () () () () () () () () () () 14 () () () () () () () 
+              () () () () () () () () () () () () () () () () 11
+Fanins[11] CLK.n DISPLAY<0>.n DISPLAY<1>.n DISPLAY<2>.n DISPLAY<3>.n DISPLAY<4>.n DISPLAY<5>.n DISPLAY<6>.n 
+           DISPLAY<7>.n C.p CLR.p
+clk[0] 
+CTC: (pt=17) CLK ;
+CTR: 
+CTS: (pt=18) CLR' ;
+CTE: 
+vref: [0]
+Signal[ 4] [DISPLAY<7>(300),DISPLAY<7>(103)] [DISPLAY<6>(304),DISPLAY<6>(101)]  
+           [DISPLAY<3>(294),DISPLAY<3>(104)] [DISPLAY<2>(302),DISPLAY<2>(102)] 
+Signal[ 4] [ 0: (111)  ][ 1: (110)  ][ 2: (107)  ][ 3: (106)  ][ 4: (105)  ][ 5: DISPLAY<3>(294)  
+           DISPLAY<3>(104)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: DISPLAY<7>(300) DISPLAY<7>(103)  ] 
+           [ 12:  ][ 13: DISPLAY<2>(302) DISPLAY<2>(102)  ][ 14:  ][ 15: DISPLAY<6>(304) DISPLAY<6>(101)  ]
+----------------- B l o c k 10 ------------------
+----------------- B l o c k 11 ------------------
+PLApt(11/56), Fanin(11/38), Clk(0/3), Bct(2/4), Pin(4/6), Mcell(4/16)
+PLApts[11/44] 2 4 6 8 17 10 18 12 15 16 () () () () () () () () () () () () () () () () () () () () () () () 
+              () () () () () () () () () () 14
+Fanins[11] CLK.n DISPLAY<0>.n DISPLAY<1>.n DISPLAY<2>.n DISPLAY<3>.n DISPLAY<4>.n DISPLAY<5>.n DISPLAY<6>.n 
+           DISPLAY<7>.n C.p CLR.p
+clk[0] 
+CTC: (pt=17) CLK ;
+CTR: 
+CTS: (pt=18) CLR' ;
+CTE: 
+vref: [0]
+Signal[ 4] [DISPLAY<5>(331),DISPLAY<5>(98)] [DISPLAY<1>(322),DISPLAY<1>(100)]  
+           [DISPLAY<4>(333),DISPLAY<4>(96)] [DISPLAY<0>(332),DISPLAY<0>(97)] 
+Signal[ 4] [ 0:  ][ 1: DISPLAY<1>(322) DISPLAY<1>(100)  ][ 2:  ][ 3:  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ] 
+           [ 9:  ][ 10: DISPLAY<5>(331) DISPLAY<5>(98)  ][ 11: DISPLAY<0>(332) DISPLAY<0>(97)  ][ 12:  
+           DISPLAY<4>(333) DISPLAY<4>(96)  ][ 13: (95)  ][ 14: (94)  ][ 15:  ]
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+PLApt(1/56), Fanin(2/38), Clk(1/3), Bct(0/4), Pin(1/8), Mcell(1/16)
+PLApts[1/20] () () () () () () () () () () () () () () () () () () () 22
+Fanins[ 2] P00/contador<20>.n P00/contador<21>.n
+clk[1] clk00 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [CLK(356),CLK(69)] 
+Signal[ 1] [ 0: (74)  ][ 1: (71)  ][ 2: (70)  ][ 3: CLK(356) CLK(69)  ][ 4:  ][ 5: (68)  ][ 6:  ][ 7:  ][ 8:  
+            ][ 9:  ][ 10:  ][ 11:  ][ 12: (66)  ][ 13: (64)  ][ 14:  ][ 15: (61)  ]
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

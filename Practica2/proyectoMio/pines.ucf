@@ -1,0 +1,35 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ##########
+# CLOCKS #
+##########
+## PCLK (On-board 8MHz oscillator) -- P38 ##
+NET "clk00"					LOC = "P38";
+NET "clk00"					IOSTANDARD = LVCMOS33;
+#NET "clk00"					BUFG = CLK;
+#NET "clk00"					COOL_CLK;
+
+## Pmod 1
+##Abajo
+NET "clr"				LOC = "P9";
+NET "clr"				IOSTANDARD = LVCMOS33;
+NET "pre"				LOC = "P6";
+NET "pre"				IOSTANDARD = LVCMOS33;
+NET "entrada1"				LOC = "P4";
+NET "entrada1"				IOSTANDARD = LVCMOS33;
+NET "entrada2"				LOC = "P2";
+NET "entrada2"				IOSTANDARD = LVCMOS33;
+
+#Arriba
+NET "nq"				LOC = "P10";
+NET "nq"				IOSTANDARD = LVCMOS33;
+NET "q"				LOC = "P7";
+NET "q"				IOSTANDARD = LVCMOS33;
+
+## Pmod 2
+##
+NET "sel(1)"				LOC = "P140";
+NET "sel(1)"				IOSTANDARD = LVCMOS33;
+NET "sel(0)"				LOC = "P138";
+NET "sel(0)"				IOSTANDARD =LVCMOS33;
+
+NET "clk"		LOC = "P69";
+NET "clk"		IOSTANDARD = LVCMOS33; 

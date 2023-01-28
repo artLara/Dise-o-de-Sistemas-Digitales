@@ -1,0 +1,53 @@
+Pin Freeze File:  version P.68d
+
+2C256144 XC2C256-6-TQ144
+CLR S:PIN118
+C S:PIN116
+clk00 S:PIN38
+CLK S:PIN69
+DISPLAY<0> S:PIN100
+DISPLAY<1> S:PIN102
+DISPLAY<2> S:PIN104
+DISPLAY<3> S:PIN96
+DISPLAY<4> S:PIN98
+DISPLAY<5> S:PIN101
+DISPLAY<6> S:PIN103
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 P00/contador<7> P00/contador<8> P00/contador<1> P00/contador<2>
+		 P00/contador<9> P00/contador<3> P00/contador<10> P00/contador<11>
+		 P00/contador<12> P00/contador<13> P00/contador<14> P00/contador<4>
+		 P00/contador<5> P00/contador<6> P00/contador<15> P00/contador<16>
+		
+PARTITION FB2_1 J<2> P00/contador<23> J<1> K<1>
+		 J<0> P00/contador<22> P00/contador<21> P00/contador<20>
+		 P00/contador<19> P00/contador<18> P00/contador<17> P00/contador<0>
+		 P00/contador<26> P00/contador<25> P00/contador<24> N_PZ_196
+		
+PARTITION FB3_12 Q<0> Q<2>
+PARTITION FB3_15 Q<1>
+
+
+
+
+
+
+
+PARTITION FB10_6 DISPLAY<2>
+PARTITION FB10_12 DISPLAY<6>
+PARTITION FB10_14 DISPLAY<1>
+PARTITION FB10_16 DISPLAY<5>
+
+PARTITION FB12_2 DISPLAY<0>
+PARTITION FB12_11 DISPLAY<4>
+PARTITION FB12_13 DISPLAY<3>
+
+
+PARTITION FB14_4 CLK
+
+
+
+

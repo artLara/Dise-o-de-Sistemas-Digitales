@@ -1,0 +1,213 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_CLK: FDCPE port map (CLK,CLK_D,clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLK_D <= (NOT P00/contador(15) AND N_PZ_196 AND NOT P00/contador(16));
+</td></tr><tr><td>
+FDCPE_DISPLAY0: FDCPE port map (DISPLAY(0),DISPLAY_D(0),CLK,'0',NOT CLR,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DISPLAY_D(0) <= (NOT Q(1) AND NOT Q(0) AND NOT Q(2));
+</td></tr><tr><td>
+FDCPE_DISPLAY1: FDCPE port map (DISPLAY(1),DISPLAY_D(1),CLK,'0',NOT CLR,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DISPLAY_D(1) <= ((NOT Q(1) AND NOT Q(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Q(0) AND NOT Q(2)));
+</td></tr><tr><td>
+FDCPE_DISPLAY2: FDCPE port map (DISPLAY(2),DISPLAY_D(2),CLK,'0',NOT CLR,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DISPLAY_D(2) <= NOT (((Q(1) AND Q(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Q(1) AND Q(0))));
+</td></tr><tr><td>
+FDCPE_DISPLAY3: FDCPE port map (DISPLAY(3),DISPLAY_D(3),CLK,'0',NOT CLR,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DISPLAY_D(3) <= ((Q(1) AND Q(0) AND NOT Q(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Q(1) AND NOT Q(0) AND NOT Q(2)));
+</td></tr><tr><td>
+FDCPE_DISPLAY4: FDCPE port map (DISPLAY(4),DISPLAY_D(4),CLK,'0',NOT CLR,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DISPLAY_D(4) <= (NOT Q(1) AND Q(0) AND NOT Q(2));
+</td></tr><tr><td>
+FDCPE_DISPLAY5: FDCPE port map (DISPLAY(5),Q(2),CLK,'0',NOT CLR,'1');
+</td></tr><tr><td>
+FDCPE_DISPLAY6: FDCPE port map (DISPLAY(6),DISPLAY_D(6),CLK,'0',NOT CLR,'1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DISPLAY_D(6) <= ((Q(1) AND Q(0) AND NOT Q(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Q(1) AND NOT Q(0) AND NOT Q(2)));
+</td></tr><tr><td>
+FDCPE_J0: FDCPE port map (J(0),NOT C,CLK,'0','0',CLR);
+</td></tr><tr><td>
+FDCPE_J1: FDCPE port map (J(1),J_D(1),CLK,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J_D(1) <= ((NOT CLR AND J(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (K(1) AND CLR AND NOT C AND J(0) AND NOT Q(0) AND Q(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (K(1) AND CLR AND NOT C AND NOT J(0) AND Q(0) AND Q(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CLR AND NOT C AND J(0) AND NOT Q(0) AND NOT Q(2) AND NOT J(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CLR AND NOT C AND NOT J(0) AND Q(0) AND NOT Q(2) AND NOT J(2)));
+</td></tr><tr><td>
+FDCPE_J2: FDCPE port map (J(2),J_D(2),CLK,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J_D(2) <= ((NOT CLR AND J(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Q(1) AND NOT K(1) AND CLR AND NOT C AND J(0) AND NOT Q(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (Q(1) AND NOT K(1) AND CLR AND NOT C AND NOT J(0) AND Q(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Q(1) AND CLR AND NOT C AND J(0) AND NOT Q(0) AND J(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Q(1) AND CLR AND NOT C AND NOT J(0) AND Q(0) AND J(1)));
+</td></tr><tr><td>
+FDCPE_K1: FDCPE port map (K(1),K_D(1),CLK,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K_D(1) <= ((K(1) AND NOT CLR)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CLR AND NOT C AND J(0) AND NOT Q(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (CLR AND NOT C AND NOT J(0) AND Q(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_196 <= (NOT P00/contador(17) AND NOT P00/contador(18) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT P00/contador(19) AND NOT P00/contador(20) AND NOT P00/contador(21) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT P00/contador(22) AND NOT P00/contador(23) AND NOT P00/contador(24) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT P00/contador(25) AND NOT P00/contador(26));
+</td></tr><tr><td>
+FDCPE_P00/contador0: FDCPE port map (P00/contador(0),P00/contador_D(0),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_D(0) <= (NOT P00/contador(0) AND N_PZ_196);
+</td></tr><tr><td>
+FDCPE_P00/contador1: FDCPE port map (P00/contador(1),P00/contador_D(1),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_D(1) <= ((P00/contador(0) AND N_PZ_196 AND NOT P00/contador(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT P00/contador(0) AND N_PZ_196 AND P00/contador(1)));
+</td></tr><tr><td>
+FTCPE_P00/contador2: FTCPE port map (P00/contador(2),P00/contador_T(2),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(2) <= ((NOT N_PZ_196 AND P00/contador(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(1)));
+</td></tr><tr><td>
+FDCPE_P00/contador3: FDCPE port map (P00/contador(3),P00/contador_D(3),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_D(3) <= (N_PZ_196 AND P00/contador(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (P00/contador(0) AND N_PZ_196 AND P00/contador(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(2));
+</td></tr><tr><td>
+FDCPE_P00/contador4: FDCPE port map (P00/contador(4),P00/contador_D(4),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_D(4) <= (N_PZ_196 AND P00/contador(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (P00/contador(0) AND N_PZ_196 AND P00/contador(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(2) AND P00/contador(3));
+</td></tr><tr><td>
+FTCPE_P00/contador5: FTCPE port map (P00/contador(5),P00/contador_T(5),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(5) <= ((NOT N_PZ_196 AND P00/contador(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(2) AND P00/contador(3) AND P00/contador(4)));
+</td></tr><tr><td>
+FDCPE_P00/contador6: FDCPE port map (P00/contador(6),P00/contador_D(6),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_D(6) <= (N_PZ_196 AND P00/contador(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (P00/contador(0) AND N_PZ_196 AND P00/contador(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(2) AND P00/contador(3) AND P00/contador(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(5));
+</td></tr><tr><td>
+FDCPE_P00/contador7: FDCPE port map (P00/contador(7),P00/contador_D(7),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_D(7) <= (N_PZ_196 AND P00/contador(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (P00/contador(0) AND N_PZ_196 AND P00/contador(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(2) AND P00/contador(3) AND P00/contador(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(5) AND P00/contador(6));
+</td></tr><tr><td>
+FTCPE_P00/contador8: FTCPE port map (P00/contador(8),P00/contador_T(8),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(8) <= ((NOT N_PZ_196 AND P00/contador(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(2) AND P00/contador(3) AND P00/contador(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(5) AND P00/contador(6) AND P00/contador(7)));
+</td></tr><tr><td>
+FTCPE_P00/contador9: FTCPE port map (P00/contador(9),P00/contador_T(9),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(9) <= ((NOT N_PZ_196 AND P00/contador(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(2) AND P00/contador(3) AND P00/contador(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(5) AND P00/contador(6) AND P00/contador(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(8)));
+</td></tr><tr><td>
+FTCPE_P00/contador10: FTCPE port map (P00/contador(10),P00/contador_T(10),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(10) <= ((NOT N_PZ_196 AND P00/contador(10))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(2) AND P00/contador(3) AND P00/contador(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(5) AND P00/contador(6) AND P00/contador(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(8) AND P00/contador(9)));
+</td></tr><tr><td>
+FTCPE_P00/contador11: FTCPE port map (P00/contador(11),P00/contador_T(11),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(11) <= ((NOT N_PZ_196 AND P00/contador(11))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(1) AND P00/contador(2) AND P00/contador(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(4) AND P00/contador(5) AND P00/contador(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(7) AND P00/contador(8) AND P00/contador(9)));
+</td></tr><tr><td>
+FTCPE_P00/contador12: FTCPE port map (P00/contador(12),P00/contador_T(12),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(12) <= ((NOT N_PZ_196 AND P00/contador(12))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(1) AND P00/contador(2) AND P00/contador(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(4) AND P00/contador(5) AND P00/contador(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(7) AND P00/contador(8) AND P00/contador(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(11)));
+</td></tr><tr><td>
+FTCPE_P00/contador13: FTCPE port map (P00/contador(13),P00/contador_T(13),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(13) <= ((NOT N_PZ_196 AND P00/contador(13))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(1) AND P00/contador(2) AND P00/contador(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(4) AND P00/contador(5) AND P00/contador(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(7) AND P00/contador(8) AND P00/contador(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(11) AND P00/contador(12)));
+</td></tr><tr><td>
+FTCPE_P00/contador14: FTCPE port map (P00/contador(14),P00/contador_T(14),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(14) <= ((NOT N_PZ_196 AND P00/contador(14))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(1) AND P00/contador(2) AND P00/contador(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(4) AND P00/contador(5) AND P00/contador(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(7) AND P00/contador(8) AND P00/contador(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(11) AND P00/contador(12) AND P00/contador(13)));
+</td></tr><tr><td>
+FTCPE_P00/contador15: FTCPE port map (P00/contador(15),P00/contador_T(15),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(15) <= ((P00/contador(15) AND NOT N_PZ_196)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(0) AND N_PZ_196 AND P00/contador(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(1) AND P00/contador(2) AND P00/contador(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(4) AND P00/contador(5) AND P00/contador(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(7) AND P00/contador(8) AND P00/contador(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(11) AND P00/contador(12) AND P00/contador(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(14)));
+</td></tr><tr><td>
+FTCPE_P00/contador16: FTCPE port map (P00/contador(16),P00/contador_T(16),clk00,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P00/contador_T(16) <= ((NOT N_PZ_196 AND P00/contador(16))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (P00/contador(15) AND P00/contador(0) AND N_PZ_196 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(10) AND P00/contador(1) AND P00/contador(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(3) AND P00/contador(4) AND P00/contador(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(6) AND P00/contador(7) AND P00/contador(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(9) AND P00/contador(11) AND P00/contador(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	P00/contador(13) AND P00/contador(14)));
+</td></tr><tr><td>
+FDCPE_P00/contador17: FDCPE port map (P00/contador(17),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FDCPE_P00/contador18: FDCPE port map (P00/contador(18),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FDCPE_P00/contador19: FDCPE port map (P00/contador(19),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FDCPE_P00/contador20: FDCPE port map (P00/contador(20),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FDCPE_P00/contador21: FDCPE port map (P00/contador(21),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FDCPE_P00/contador22: FDCPE port map (P00/contador(22),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FDCPE_P00/contador23: FDCPE port map (P00/contador(23),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FDCPE_P00/contador24: FDCPE port map (P00/contador(24),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FDCPE_P00/contador25: FDCPE port map (P00/contador(25),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FDCPE_P00/contador26: FDCPE port map (P00/contador(26),'0',clk00,'0','0','1');
+</td></tr><tr><td>
+FTCPE_Q0: FTCPE port map (Q(0),J(0),CLK,NOT CLR,'0','1');
+</td></tr><tr><td>
+FDCPE_Q1: FDCPE port map (Q(1),Q_D(1),CLK,NOT CLR,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q_D(1) <= NOT (((Q(1) AND K(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Q(1) AND NOT J(1))));
+</td></tr><tr><td>
+FDCPE_Q2: FDCPE port map (Q(2),Q_D(2),CLK,NOT CLR,'0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q_D(2) <= NOT (((K(1) AND Q(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT Q(2) AND NOT J(2))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

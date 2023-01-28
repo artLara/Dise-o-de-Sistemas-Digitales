@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="practica5.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="contadorDecada.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="contadorDecada.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="contadorDecada.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="contadorDecada.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="contadorDecada.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="contadorDecada.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="contadorDecada.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="contadorDecada.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="contadorDecada.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="contadorDecada.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="contadorDecada.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="contadorDecada.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="contadorDecada.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="contadorDecada.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="contadorDecada.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="contadorDecada.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="contadorDecada.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="contadorDecada.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="contadorDecada.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="contadorDecada.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="contadorDecada.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="contadorDecada.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="contadorDecada.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="contadorDecada.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="contadorDecada_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="contadorDecada_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="contadorDecada_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contadorDecada_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="contadorDecada_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="contadorDecada_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="contadorDecada_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="contadorDecada_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1556755941" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1556755941">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1556755941" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-6553673411678727094" xil_pn:start_ts="1556755941">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1557159188" xil_pn:in_ck="-7258943298934812068" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-4331030520429681236" xil_pn:start_ts="1557159181">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="contadorDecada.lso"/>
+      <outfile xil_pn:name="contadorDecada.ngc"/>
+      <outfile xil_pn:name="contadorDecada.ngr"/>
+      <outfile xil_pn:name="contadorDecada.prj"/>
+      <outfile xil_pn:name="contadorDecada.stx"/>
+      <outfile xil_pn:name="contadorDecada.syr"/>
+      <outfile xil_pn:name="contadorDecada.xst"/>
+      <outfile xil_pn:name="contadorDecada_vhdl.prj"/>
+      <outfile xil_pn:name="contadorDecada_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1556755945" xil_pn:in_ck="162138854071659" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5249002122797381540" xil_pn:start_ts="1556755945">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1557159194" xil_pn:in_ck="3867290199507982973" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1557159188">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="contadorDecada.bld"/>
+      <outfile xil_pn:name="contadorDecada.ngd"/>
+      <outfile xil_pn:name="contadorDecada_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1557159214" xil_pn:in_ck="-5717106217480376109" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="4144893567059803909" xil_pn:start_ts="1557159194">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="contadorDecada.chk"/>
+      <outfile xil_pn:name="contadorDecada.cxt"/>
+      <outfile xil_pn:name="contadorDecada.gyd"/>
+      <outfile xil_pn:name="contadorDecada.log"/>
+      <outfile xil_pn:name="contadorDecada.mfd"/>
+      <outfile xil_pn:name="contadorDecada.nga"/>
+      <outfile xil_pn:name="contadorDecada.pad"/>
+      <outfile xil_pn:name="contadorDecada.pnx"/>
+      <outfile xil_pn:name="contadorDecada.rpt"/>
+      <outfile xil_pn:name="contadorDecada.tim"/>
+      <outfile xil_pn:name="contadorDecada.tspec"/>
+      <outfile xil_pn:name="contadorDecada.vm6"/>
+      <outfile xil_pn:name="contadorDecada.xml"/>
+      <outfile xil_pn:name="contadorDecada_build.xml"/>
+      <outfile xil_pn:name="contadorDecada_html"/>
+      <outfile xil_pn:name="contadorDecada_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1557159216" xil_pn:in_ck="-5717106217480367245" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1557159214">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="contadorDecada.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1557335973" xil_pn:in_ck="-5717106217480380531" xil_pn:name="TRAN_configureTargetDevice_CPLD" xil_pn:prop_ck="-3223234765801749484" xil_pn:start_ts="1557335970">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1556386207" xil_pn:in_ck="-5717106217480367245" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1556386204">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

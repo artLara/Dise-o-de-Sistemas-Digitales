@@ -1,0 +1,234 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: registroUniversal.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "registroUniversal.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "registroUniversal"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : registroUniversal
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" in Library work.
+Entity <div00> compiled.
+Entity <div00> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Documentos/ESCOM/DSD/practica3/p3/registroUniversal.vhd" in Library work.
+Architecture behavioral of Entity registrouniversal is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <registroUniversal> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <div00> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <registroUniversal> in library <work> (Architecture <behavioral>).
+Entity <registroUniversal> analyzed. Unit <registroUniversal> generated.
+
+Analyzing Entity <div00> in library <work> (Architecture <behavioral>).
+Entity <div00> analyzed. Unit <div00> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <div00>.
+    Related source file is "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd".
+    Found 1-bit register for signal <clkout>.
+    Found 22-bit comparator less for signal <clkout$cmp_lt0000> created at line 50.
+    Found 22-bit up counter for signal <contador>.
+    Found 22-bit comparator less for signal <contador$cmp_lt0000> created at line 45.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 Comparator(s).
+Unit <div00> synthesized.
+
+
+Synthesizing Unit <registroUniversal>.
+    Related source file is "D:/Documentos/ESCOM/DSD/practica3/p3/registroUniversal.vhd".
+    Found 8-bit register for signal <Q>.
+    Found 1-bit 4-to-1 multiplexer for signal <Q_0$mux0000> created at line 60.
+    Found 1-bit 4-to-1 multiplexer for signal <Q_1$mux0000> created at line 60.
+    Found 1-bit 4-to-1 multiplexer for signal <Q_2$mux0000> created at line 60.
+    Found 1-bit 4-to-1 multiplexer for signal <Q_3$mux0000> created at line 60.
+    Found 1-bit 4-to-1 multiplexer for signal <Q_4$mux0000> created at line 60.
+    Found 1-bit 4-to-1 multiplexer for signal <Q_5$mux0000> created at line 60.
+    Found 1-bit 4-to-1 multiplexer for signal <Q_6$mux0000> created at line 60.
+    Found 1-bit 4-to-1 multiplexer for signal <Q_7$mux0000> created at line 60.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <registroUniversal> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 22-bit up counter                                     : 1
+# Registers                                            : 9
+ 1-bit register                                        : 9
+# Comparators                                          : 2
+ 22-bit comparator less                                : 2
+# Multiplexers                                         : 8
+ 1-bit 4-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 22-bit up counter                                     : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 8
+ 1-bit 4-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <registroUniversal> ...
+
+Optimizing unit <div00> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : registroUniversal.ngr
+Top Level Output File Name         : registroUniversal
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 141
+#      AND2                        : 79
+#      AND3                        : 1
+#      AND6                        : 1
+#      AND8                        : 2
+#      INV                         : 29
+#      OR4                         : 8
+#      XOR2                        : 21
+# FlipFlops/Latches                : 31
+#      FD                          : 23
+#      FDC                         : 8
+# IO Buffers                       : 23
+#      IBUF                        : 14
+#      OBUF                        : 9
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.94 secs
+ 
+--> 
+
+Total memory usage is 265676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,99 @@
+# CLOCKS #
+##########
+## PCLK (On-board 8MHz oscillator) -- P38 ##
+NET "clk00"					LOC = "P38";
+NET "clk00"					IOSTANDARD = LVCMOS33;
+
+###########################################
+# ON-BOARD 4-DIGIT, 7-SEGMENT LED DISPLAY #
+###########################################
+#
+# CATHODES
+# Shared between digits, active low
+#
+NET "display(6)"		LOC = "P56";
+NET "display(6)"		IOSTANDARD = LVCMOS33;
+NET "display(5)"		LOC = "P53";
+NET "display(5)"		IOSTANDARD = LVCMOS33;
+NET "display(4)"		LOC = "P60";
+NET "display(4)"		IOSTANDARD = LVCMOS33;
+NET "display(3)"		LOC = "P58";
+NET "display(3)"		IOSTANDARD = LVCMOS33;
+NET "display(2)"		LOC = "P57";
+NET "display(2)"		IOSTANDARD = LVCMOS33;
+NET "display(1)"		LOC = "P54";
+NET "display(1)"		IOSTANDARD = LVCMOS33;
+NET "display(0)"		LOC = "P61";
+NET "display(0)"		IOSTANDARD = LVCMOS33;
+#NET "display(0)"		LOC = "P59";
+#NET "display(0)"		IOSTANDARD = LVCMOS33;
+
+NET "DISP"		LOC = "P130";
+NET "DISP"		IOSTANDARD = LVCMOS33;
+NET "DISP"		LOC = "P129";
+NET "DISP"		IOSTANDARD = LVCMOS33;
+NET "DISP"		LOC = "P128";
+NET "DISP"		IOSTANDARD = LVCMOS33;
+NET "DISP"		LOC = "P126";
+NET "DISP"		IOSTANDARD = LVCMOS33;
+NET "DISP"		LOC = "P68";
+NET "DISP"		IOSTANDARD = LVCMOS33;
+
+## Pmod 1
+##Abajo
+NET "E(0)"				LOC = "P9";
+NET "E(0)"				IOSTANDARD = LVCMOS33;
+NET "E(1)"				LOC = "P6";
+NET "E(1)"				IOSTANDARD = LVCMOS33;
+NET "E(2)"				LOC = "P4";
+NET "E(2)"				IOSTANDARD = LVCMOS33;
+NET "E(3)"				LOC = "P2";
+NET "E(3)"				IOSTANDARD = LVCMOS33;
+
+## Pmod 2
+##
+NET "E(4)"				LOC = "P140";
+NET "E(4)"				IOSTANDARD = LVCMOS33;
+NET "E(5)"				LOC = "P138";
+NET "E(5)"				IOSTANDARD = LVCMOS33;
+NET "E(6)"				LOC = "P135";
+NET "E(6)"				IOSTANDARD = LVCMOS33;
+NET "E(7)"				LOC = "P133";
+NET "E(7)"				IOSTANDARD = LVCMOS33;
+
+## Pmod 3
+##
+NET "E(8)"				LOC = "P118";
+NET "E(8)"				IOSTANDARD = LVCMOS33;
+NET "E(9)"				LOC = "P116";
+NET "E(9)"				IOSTANDARD = LVCMOS33;
+NET "C(1)"				LOC = "P114";
+NET "C(1)"				IOSTANDARD = LVCMOS33;
+NET "C(0)"				LOC = "P112";
+NET "C(0)"				IOSTANDARD = LVCMOS33;
+
+NET "CLR"				LOC = "P119";
+NET "CLR"				IOSTANDARD = LVCMOS33;
+
+NET "clk"		LOC = "P69";
+NET "clk"		IOSTANDARD = LVCMOS33;
+
+## Pmod 4
+##
+NET "display(6)"				LOC = "P103";
+NET "display(6)"				IOSTANDARD = LVCMOS33;
+NET "display(5)"				LOC = "P101";
+NET "display(5)"				IOSTANDARD = LVCMOS33;
+NET "display(4)"				LOC = "P98";
+NET "display(4)"				IOSTANDARD = LVCMOS33;
+NET "display(3)"				LOC = "P96";
+NET "display(3)"				IOSTANDARD = LVCMOS33;
+
+NET "display(2)"				LOC = "P104";
+NET "display(2)"				IOSTANDARD = LVCMOS33;
+NET "display(1)"				LOC = "P102";
+NET "display(1)"				IOSTANDARD = LVCMOS33;
+NET "display(0)"				LOC = "P100";
+NET "display(0)"				IOSTANDARD = LVCMOS33;
+#NET "PMOD4T<3>"				LOC = "P97";
+#NET "PMOD4T<3>"				IOSTANDARD = LVCMOS33;

@@ -1,0 +1,5 @@
+[Inputs]
+clk00
+[Outputs]
+led
+[BiDir]

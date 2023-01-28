@@ -1,0 +1,234 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: dado.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dado.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dado"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : dado
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" in Library work.
+Entity <div00> compiled.
+Entity <div00> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Documentos/ESCOM/DSD/dado/dado/dado.vhd" in Library work.
+Architecture behavioral of Entity dado is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <dado> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <div00> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <dado> in library <work> (Architecture <behavioral>).
+Entity <dado> analyzed. Unit <dado> generated.
+
+Analyzing Entity <div00> in library <work> (Architecture <behavioral>).
+Entity <div00> analyzed. Unit <div00> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <div00>.
+    Related source file is "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd".
+    Found 1-bit register for signal <clkout>.
+    Found 27-bit comparator less for signal <clkout$cmp_lt0000> created at line 50.
+    Found 27-bit up counter for signal <contador>.
+    Found 27-bit comparator less for signal <contador$cmp_lt0000> created at line 45.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 Comparator(s).
+Unit <div00> synthesized.
+
+
+Synthesizing Unit <dado>.
+    Related source file is "D:/Documentos/ESCOM/DSD/dado/dado/dado.vhd".
+    Register <K<0>> equivalent to <J<0>> has been removed
+    Register <K<2>> equivalent to <K<1>> has been removed
+    Found 7-bit register for signal <DISPLAY>.
+    Found 3-bit register for signal <J>.
+    Found 1-bit register for signal <K<1>>.
+    Found 3-bit register for signal <Q>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <dado> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 9
+ 1-bit register                                        : 8
+ 7-bit register                                        : 1
+# Comparators                                          : 2
+ 27-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <DISPLAY_6> in Unit <dado> is equivalent to the following FF/Latch, which will be removed : <DISPLAY_3> 
+
+Optimizing unit <dado> ...
+
+Optimizing unit <div00> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : dado.ngr
+Top Level Output File Name         : dado
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 174
+#      AND2                        : 67
+#      AND3                        : 4
+#      AND4                        : 1
+#      AND8                        : 2
+#      GND                         : 1
+#      INV                         : 64
+#      OR2                         : 5
+#      OR3                         : 1
+#      OR8                         : 2
+#      XOR2                        : 27
+# FlipFlops/Latches                : 41
+#      FD                          : 28
+#      FDC                         : 3
+#      FDCE                        : 4
+#      FDP                         : 6
+# IO Buffers                       : 11
+#      IBUF                        : 3
+#      OBUF                        : 8
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.60 secs
+ 
+--> 
+
+Total memory usage is 265996 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,168 @@
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+taengine -intstyle ise -f contadorDecada -w --format html1 -l contadorDecada_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.xst" -ofn "D:/Documentos/ESCOM/DSD/practica5/practica5/contadorDecada.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 contadorDecada.ngc contadorDecada.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 contadorDecada.ngd 
+XSLTProcess contadorDecada_build.xml 
+tsim -intstyle ise contadorDecada contadorDecada.nga 
+hprep6 -s IEEE1149 -i contadorDecada 

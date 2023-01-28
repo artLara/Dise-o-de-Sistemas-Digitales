@@ -1,0 +1,225 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: teclado.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "teclado.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "teclado"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : teclado
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" in Library work.
+Architecture behavioral of Entity div00 is up to date.
+Compiling vhdl file "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.vhd" in Library work.
+Architecture behavioral of Entity teclado is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <teclado> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <div00> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <teclado> in library <work> (Architecture <behavioral>).
+Entity <teclado> analyzed. Unit <teclado> generated.
+
+Analyzing Entity <div00> in library <work> (Architecture <behavioral>).
+Entity <div00> analyzed. Unit <div00> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <div00>.
+    Related source file is "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd".
+    Found 1-bit register for signal <clkout>.
+    Found 10-bit comparator less for signal <clkout$cmp_lt0000> created at line 50.
+    Found 10-bit up counter for signal <contador>.
+    Found 10-bit comparator less for signal <contador$cmp_lt0000> created at line 45.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 Comparator(s).
+Unit <div00> synthesized.
+
+
+Synthesizing Unit <teclado>.
+    Related source file is "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.vhd".
+    Found 4-bit register for signal <C>.
+    Found 7-bit register for signal <DISPLAY>.
+Unit <teclado> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 10-bit up counter                                     : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+# Comparators                                          : 2
+ 10-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 10-bit up counter                                     : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <teclado> ...
+
+Optimizing unit <div00> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : teclado.ngr
+Top Level Output File Name         : teclado
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 192
+#      AND2                        : 87
+#      AND4                        : 18
+#      AND8                        : 1
+#      INV                         : 63
+#      OR2                         : 4
+#      OR3                         : 3
+#      OR5                         : 1
+#      OR6                         : 4
+#      OR7                         : 2
+#      XOR2                        : 9
+# FlipFlops/Latches                : 22
+#      FD                          : 11
+#      FDC                         : 1
+#      FDP                         : 3
+#      FDPE                        : 7
+# IO Buffers                       : 18
+#      IBUF                        : 6
+#      OBUF                        : 12
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.40 secs
+ 
+--> 
+
+Total memory usage is 265804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

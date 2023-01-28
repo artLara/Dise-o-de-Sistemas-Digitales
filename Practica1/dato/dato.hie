@@ -1,0 +1,2 @@
+dato.vhd #Entity datoentity 4
+dato.vhd #Architecture flujo2 datoentity 22

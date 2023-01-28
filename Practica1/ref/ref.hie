@@ -1,0 +1,2 @@
+p1.vhd #Entity datoentity 4
+p1.vhd #Architecture flujo2 datoentity 13

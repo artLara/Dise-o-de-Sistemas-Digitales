@@ -1,0 +1,6 @@
+MESSAGE "File: C:\Documents and Settings\Art\Escritorio\Practica1\comparador\p1.vhd" 
+MESSAGE "Compile Entity "p1"" 
+MESSAGE "Compile Architecture "flujo2" of Entity "p1"" 
+MESSAGE "Top-Level unit detected" 
+MESSAGE "Entity  =>   p1" 
+MESSAGE "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

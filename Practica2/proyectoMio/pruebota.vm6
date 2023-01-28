@@ -1,0 +1,222 @@
+NDS Database:  version P.68d
+
+NDS_INFO | xbr | 2C256144 | XC2C256-6-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | pruebota | 0 | 0 | 1073758214 | 0
+
+MACROCELL_INSTANCE | Inv | clk_MC | pruebota_COPY_0_COPY_0 | 256 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | clk_MC.Q | 175 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | clk_MC.Q | clk_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | clk_MC.SI | clk_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | clk_MC.D1 | 173 | ? | 0 | 0 | clk_MC | NULL | NULL | clk_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | clk_MC.D2 | 172 | ? | 0 | 0 | clk_MC | NULL | NULL | clk_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | clk_MC.REG | clk_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | clk_MC.D | 171 | ? | 0 | 0 | clk_MC | NULL | NULL | clk_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | clk_MC.Q | 174 | ? | 0 | 0 | clk_MC | NULL | NULL | clk_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | clk | pruebota_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | clk_MC.Q | 175 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | clk_MC.Q | clk_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | clk | 176 | PO | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | clk | 0 | 6 | OI_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | clr_II | pruebota_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clr | 177 | PI | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | clr_II/UIM | 187 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | clr_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | entrada1_II | pruebota_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | entrada1 | 178 | PI | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | entrada1_II/UIM | 184 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | entrada1_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow | nq_MC | pruebota_COPY_0_COPY_0 | 1024 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pre_II/UIM | 183 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | pre_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | entrada1_II/UIM | 184 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | entrada1_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 185 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 0 | IV_DC
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/6 | 186 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 1 | IV_FALSE | clr_II/UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | nq_MC.Q | 189 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | nq_MC.Q | nq_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | nq_MC.SI | nq_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | pre_II/UIM | 183 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | pre_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | entrada1_II/UIM | 184 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | entrada1_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | nq_MC.D1 | 180 | ? | 0 | 0 | nq_MC | NULL | NULL | nq_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | pre_II/UIM | IV_FALSE | entrada1_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | nq_MC.D2 | 181 | ? | 0 | 0 | nq_MC | NULL | NULL | nq_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | nq_MC.REG | nq_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | nq_MC.D | 179 | ? | 0 | 0 | nq_MC | NULL | NULL | nq_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 185 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 0 | IV_DC
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | FOOBAR2__ctinst/6 | 186 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 1 | IV_FALSE | clr_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | nq_MC.Q | 188 | ? | 0 | 0 | nq_MC | NULL | NULL | nq_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | pre_II | pruebota_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | pre | 182 | PI | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | pre_II/UIM | 183 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | pre_II | 0 | 5 | II_IMUX
+
+OUTPUT_INSTANCE | 0 | nq | pruebota_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | nq_MC.Q | 189 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | nq_MC.Q | nq_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | nq | 190 | PO | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | nq | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | q_MC | pruebota_COPY_0_COPY_0 | 0 | 0 | 1
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_MC.Q | 195 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | q_MC.Q | q_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | q_MC.SI | q_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_MC.D1 | 193 | ? | 0 | 0 | q_MC | NULL | NULL | q_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_MC.D2 | 192 | ? | 0 | 0 | q_MC | NULL | NULL | q_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | q_MC.REG | q_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_MC.D | 191 | ? | 0 | 0 | q_MC | NULL | NULL | q_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_MC.Q | 194 | ? | 0 | 0 | q_MC | NULL | NULL | q_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | q | pruebota_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_MC.Q | 195 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | q_MC.Q | q_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q | 196 | PO | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | q | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR2_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 4 | NULL | 0 | entrada1_II | 1 | NULL | 0 | 4 | 49152
+FBPIN | 12 | NULL | 0 | pre_II | 1 | NULL | 0 | 6 | 53248
+FBPIN | 13 | q_MC | 1 | NULL | 0 | q | 1 | 7 | 49152
+FBPIN | 14 | NULL | 0 | clr_II | 1 | NULL | 0 | 9 | 49152
+FBPIN | 15 | nq_MC | 1 | NULL | 0 | nq | 1 | 10 | 49152
+
+FB_INSTANCE | FOOBAR3_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR4_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR5_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR7_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR10_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR11_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR13_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 4 | clk_MC | 1 | NULL | 0 | clk | 1 | 69 | 49152
+
+FB_INSTANCE | FOOBAR15_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | pruebota_COPY_0_COPY_0 | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clr_II/UIM | 187 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | clr_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 185 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 6 | 12 | CT_SI6
+SIGNAL | NODE | FOOBAR2__ctinst/6 | 186 | ? | 0 | 0 | pruebota_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 6 | 12 | CT_SI6
+SPPTERM | 1 | IV_FALSE | clr_II/UIM
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | pruebota_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR2_ | 3
+PLA_TERM | 4 | 
+SPPTERM | 0 | IV_DC
+PLA_TERM | 6 | 
+SPPTERM | 1 | IV_FALSE | clr_II/UIM
+PLA_TERM | 52 | 
+SPPTERM | 2 | IV_FALSE | pre_II/UIM | IV_FALSE | entrada1_II/UIM
+
+BUSINFO | SEL<1:0> | 2 | 0 | 0 | sel<0> | 1 | sel<1> | 0
+
+IOSTD | LVCMOS18
+clk | LVCMOS33
+clr | LVCMOS33
+entrada1 | LVCMOS33
+pre | LVCMOS33
+nq | LVCMOS33
+q | LVCMOS33
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 7 | pre | 6 | 9 | entrada1 | 4 | 10 | clr | 9
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 17 | -1 | 14 | 19 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

@@ -1,0 +1,15 @@
+V3 7
+FL D:/Documentos/ESCOM/DSD/dado/dado/dado.vhd 2019/05/05.18:02:31 P.68d
+EN work/dado 1559156324 FL D:/Documentos/ESCOM/DSD/dado/dado/dado.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/dado/Behavioral 1559156325 \
+      FL D:/Documentos/ESCOM/DSD/dado/dado/dado.vhd EN work/dado 1559156324 \
+      CP div00
+FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" 2019/05/29.13:37:53 P.68d
+EN work/div00 1559156322 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/div00/Behavioral 1559156323 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" \
+      EN work/div00 1559156322

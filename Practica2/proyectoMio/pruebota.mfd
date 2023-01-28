@@ -1,0 +1,30 @@
+MDF Database:  version 1.0
+MDF_INFO | pruebota | XC2C256-6-TQ144
+MACROCELL | 13 | 3 | clk_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   !clk = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 1 | 14 | nq_MC
+ATTRIBUTES | 159646466 | 0
+INPUTS | 2 | pre  | entrada1
+INPUTP | 2 | 7 | 4
+LCT | 2 | 1 | Internal_Name | 2 | Internal_Name
+EQ | 3 | 
+   nq := !pre & !entrada1;	// (1 pt, 2 inp)
+    nq.CLK = Vcc;	// CTC	(1 pt, 1 inp)
+    nq.AP = !clr;	// CTS	(1 pt, 1 inp)
+
+MACROCELL | 1 | 12 | q_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   q = Gnd;	// (0 pt, 0 inp)
+
+PIN | clr | 64 | 16 | LVCMOS33 | 10 | 0
+PIN | entrada1 | 64 | 16 | LVCMOS33 | 4 | 1 | 1 | 14
+PIN | pre | 64 | 16 | LVCMOS33 | 7 | 1 | 1 | 14
+PIN | clk | 536871040 | 0 | LVCMOS33 | 107
+PIN | nq | 536871040 | 0 | LVCMOS33 | 12
+PIN | q | 536871040 | 0 | LVCMOS33 | 8

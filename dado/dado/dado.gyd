@@ -1,0 +1,47 @@
+Pin Freeze File:  version P.68d
+
+2C256144 XC2C256-6-TQ144
+CLR S:PIN118
+C S:PIN116
+clk00 S:PIN38
+CLK S:PIN113
+DISPLAY<0> S:PIN100
+DISPLAY<1> S:PIN102
+DISPLAY<2> S:PIN104
+DISPLAY<3> S:PIN96
+DISPLAY<4> S:PIN98
+DISPLAY<5> S:PIN101
+DISPLAY<6> S:PIN103
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 P00/contador<0> P00/contador<1> Q<2> Q<1>
+		 P00/contador<2> J<2> P00/contador<3> P00/contador<4>
+		 P00/contador<5> P00/contador<6> P00/contador<7> J<1>
+		 K<1> J<0> P00/contador<8> P00/contador<9>
+		
+PARTITION FB2_16 Q<0>
+
+
+
+
+
+
+PARTITION FB9_2 CLK
+
+PARTITION FB10_6 DISPLAY<2>
+PARTITION FB10_12 DISPLAY<6>
+PARTITION FB10_14 DISPLAY<1>
+PARTITION FB10_16 DISPLAY<5>
+
+PARTITION FB12_2 DISPLAY<0>
+PARTITION FB12_11 DISPLAY<4>
+PARTITION FB12_13 DISPLAY<3>
+
+
+
+
+
+

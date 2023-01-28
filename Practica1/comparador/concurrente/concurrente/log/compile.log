@@ -1,0 +1,7 @@
+ Compilation with file reorder...
+ File: C:\Documents and Settings\Art\Escritorio\Practica1\comparador\concurrente\concurrente.vhd
+ Compile Entity "multiplexor"
+ Compile Architecture "a_multiplexor" of Entity "multiplexor"
+ Top-Level unit detected
+ Entity  =>   multiplexor
+ Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]

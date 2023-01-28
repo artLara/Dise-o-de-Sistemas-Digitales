@@ -1,0 +1,545 @@
+MDF Database:  version 1.0
+MDF_INFO | contadorDecada | XC2C256-6-TQ144
+MACROCELL | 13 | 3 | CLK_MC
+ATTRIBUTES | 2156167938 | 0
+INPUTS | 2 | P00/contador<20>  | P00/contador<21>
+INPUTMC | 2 | 1 | 7 | 1 | 6
+EQ | 2 | 
+   CLK := !P00/contador<20> & !P00/contador<21>;	// (1 pt, 2 inp)
+   CLK.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 1 | 7 | P00/contador<20>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 2 | 1 | 6 | 13 | 3
+INPUTS | 20 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>  | P00/contador<12>  | P00/contador<13>  | P00/contador<14>  | P00/contador<15>  | P00/contador<16>  | P00/contador<17>  | P00/contador<18>  | P00/contador<19>
+INPUTMC | 20 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8
+EQ | 8 | 
+   P00/contador<20>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9> & 
+	P00/contador<11> & P00/contador<12> & P00/contador<13> & 
+	P00/contador<14> & P00/contador<15> & P00/contador<16> & 
+	P00/contador<17> & P00/contador<18> & P00/contador<19>;	// (1 pt, 20 inp)
+   P00/contador<20>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 15 | P00/contador<0>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 21 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 0
+EQ | 2 | 
+   !P00/contador<0>.T := Gnd;	// (0 pt, 0 inp)
+   P00/contador<0>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 13 | P00/contador<10>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 10 | P00/contador<0>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>
+INPUTMC | 10 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0
+EQ | 5 | 
+   P00/contador<10>.T := P00/contador<0> & P00/contador<1> & 
+	P00/contador<2> & P00/contador<3> & P00/contador<4> & 
+	P00/contador<5> & P00/contador<6> & P00/contador<7> & 
+	P00/contador<8> & P00/contador<9>;	// (1 pt, 10 inp)
+   P00/contador<10>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 14 | P00/contador<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 20 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 1 | P00/contador<0>
+INPUTMC | 1 | 0 | 15
+EQ | 2 | 
+   P00/contador<1>.T := P00/contador<0>;	// (1 pt, 1 inp)
+   P00/contador<1>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 10 | P00/contador<2>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 19 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 2 | P00/contador<0>  | P00/contador<1>
+INPUTMC | 2 | 0 | 15 | 0 | 14
+EQ | 2 | 
+   P00/contador<2>.T := P00/contador<0> & P00/contador<1>;	// (1 pt, 2 inp)
+   P00/contador<2>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 9 | P00/contador<3>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 18 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 3 | P00/contador<0>  | P00/contador<1>  | P00/contador<2>
+INPUTMC | 3 | 0 | 15 | 0 | 14 | 0 | 10
+EQ | 3 | 
+   P00/contador<3>.T := P00/contador<0> & P00/contador<1> & 
+	P00/contador<2>;	// (1 pt, 3 inp)
+   P00/contador<3>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 8 | P00/contador<4>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 17 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 4 | P00/contador<0>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>
+INPUTMC | 4 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9
+EQ | 3 | 
+   P00/contador<4>.T := P00/contador<0> & P00/contador<1> & 
+	P00/contador<2> & P00/contador<3>;	// (1 pt, 4 inp)
+   P00/contador<4>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 7 | P00/contador<5>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 16 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 5 | P00/contador<0>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>
+INPUTMC | 5 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8
+EQ | 3 | 
+   P00/contador<5>.T := P00/contador<0> & P00/contador<1> & 
+	P00/contador<2> & P00/contador<3> & P00/contador<4>;	// (1 pt, 5 inp)
+   P00/contador<5>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 6 | P00/contador<6>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 15 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 6 | P00/contador<0>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>
+INPUTMC | 6 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7
+EQ | 4 | 
+   P00/contador<6>.T := P00/contador<0> & P00/contador<1> & 
+	P00/contador<2> & P00/contador<3> & P00/contador<4> & 
+	P00/contador<5>;	// (1 pt, 6 inp)
+   P00/contador<6>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 4 | P00/contador<7>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 14 | 0 | 1 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 7 | P00/contador<0>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>
+INPUTMC | 7 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6
+EQ | 4 | 
+   P00/contador<7>.T := P00/contador<0> & P00/contador<1> & 
+	P00/contador<2> & P00/contador<3> & P00/contador<4> & 
+	P00/contador<5> & P00/contador<6>;	// (1 pt, 7 inp)
+   P00/contador<7>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 1 | P00/contador<8>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 13 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 8 | P00/contador<0>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>
+INPUTMC | 8 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4
+EQ | 4 | 
+   P00/contador<8>.T := P00/contador<0> & P00/contador<1> & 
+	P00/contador<2> & P00/contador<3> & P00/contador<4> & 
+	P00/contador<5> & P00/contador<6> & P00/contador<7>;	// (1 pt, 8 inp)
+   P00/contador<8>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 0 | P00/contador<9>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 12 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 9 | P00/contador<0>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>
+INPUTMC | 9 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1
+EQ | 5 | 
+   P00/contador<9>.T := P00/contador<0> & P00/contador<1> & 
+	P00/contador<2> & P00/contador<3> & P00/contador<4> & 
+	P00/contador<5> & P00/contador<6> & P00/contador<7> & 
+	P00/contador<8>;	// (1 pt, 9 inp)
+   P00/contador<9>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 12 | P00/contador<11>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 10 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 11 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>
+INPUTMC | 11 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0
+EQ | 5 | 
+   P00/contador<11>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9>;	// (1 pt, 11 inp)
+   P00/contador<11>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 11 | P00/contador<12>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 9 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 12 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>
+INPUTMC | 12 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12
+EQ | 6 | 
+   P00/contador<12>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9> & 
+	P00/contador<11>;	// (1 pt, 12 inp)
+   P00/contador<12>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 5 | P00/contador<13>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 8 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 13 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>  | P00/contador<12>
+INPUTMC | 13 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12 | 0 | 11
+EQ | 6 | 
+   P00/contador<13>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9> & 
+	P00/contador<11> & P00/contador<12>;	// (1 pt, 13 inp)
+   P00/contador<13>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 3 | P00/contador<14>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 14 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>  | P00/contador<12>  | P00/contador<13>
+INPUTMC | 14 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12 | 0 | 11 | 0 | 5
+EQ | 6 | 
+   P00/contador<14>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9> & 
+	P00/contador<11> & P00/contador<12> & P00/contador<13>;	// (1 pt, 14 inp)
+   P00/contador<14>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 0 | 2 | P00/contador<15>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 6 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 15 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>  | P00/contador<12>  | P00/contador<13>  | P00/contador<14>
+INPUTMC | 15 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3
+EQ | 7 | 
+   P00/contador<15>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9> & 
+	P00/contador<11> & P00/contador<12> & P00/contador<13> & 
+	P00/contador<14>;	// (1 pt, 15 inp)
+   P00/contador<15>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 1 | 15 | P00/contador<16>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 5 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 16 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>  | P00/contador<12>  | P00/contador<13>  | P00/contador<14>  | P00/contador<15>
+INPUTMC | 16 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2
+EQ | 7 | 
+   P00/contador<16>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9> & 
+	P00/contador<11> & P00/contador<12> & P00/contador<13> & 
+	P00/contador<14> & P00/contador<15>;	// (1 pt, 16 inp)
+   P00/contador<16>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 1 | 10 | P00/contador<17>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 4 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 17 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>  | P00/contador<12>  | P00/contador<13>  | P00/contador<14>  | P00/contador<15>  | P00/contador<16>
+INPUTMC | 17 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15
+EQ | 7 | 
+   P00/contador<17>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9> & 
+	P00/contador<11> & P00/contador<12> & P00/contador<13> & 
+	P00/contador<14> & P00/contador<15> & P00/contador<16>;	// (1 pt, 17 inp)
+   P00/contador<17>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 1 | 9 | P00/contador<18>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 3 | 1 | 8 | 1 | 7 | 1 | 6
+INPUTS | 18 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>  | P00/contador<12>  | P00/contador<13>  | P00/contador<14>  | P00/contador<15>  | P00/contador<16>  | P00/contador<17>
+INPUTMC | 18 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10
+EQ | 8 | 
+   P00/contador<18>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9> & 
+	P00/contador<11> & P00/contador<12> & P00/contador<13> & 
+	P00/contador<14> & P00/contador<15> & P00/contador<16> & 
+	P00/contador<17>;	// (1 pt, 18 inp)
+   P00/contador<18>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 1 | 8 | P00/contador<19>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 2 | 1 | 7 | 1 | 6
+INPUTS | 19 | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>  | P00/contador<12>  | P00/contador<13>  | P00/contador<14>  | P00/contador<15>  | P00/contador<16>  | P00/contador<17>  | P00/contador<18>
+INPUTMC | 19 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9
+EQ | 8 | 
+   P00/contador<19>.T := P00/contador<0> & P00/contador<10> & 
+	P00/contador<1> & P00/contador<2> & P00/contador<3> & 
+	P00/contador<4> & P00/contador<5> & P00/contador<6> & 
+	P00/contador<7> & P00/contador<8> & P00/contador<9> & 
+	P00/contador<11> & P00/contador<12> & P00/contador<13> & 
+	P00/contador<14> & P00/contador<15> & P00/contador<16> & 
+	P00/contador<17> & P00/contador<18>;	// (1 pt, 19 inp)
+   P00/contador<19>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 1 | 6 | P00/contador<21>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 1 | 13 | 3
+INPUTS | 21 | P00/contador<20>  | P00/contador<0>  | P00/contador<10>  | P00/contador<1>  | P00/contador<2>  | P00/contador<3>  | P00/contador<4>  | P00/contador<5>  | P00/contador<6>  | P00/contador<7>  | P00/contador<8>  | P00/contador<9>  | P00/contador<11>  | P00/contador<12>  | P00/contador<13>  | P00/contador<14>  | P00/contador<15>  | P00/contador<16>  | P00/contador<17>  | P00/contador<18>  | P00/contador<19>
+INPUTMC | 21 | 1 | 7 | 0 | 15 | 0 | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8
+EQ | 9 | 
+   P00/contador<21>.T := P00/contador<20> & P00/contador<0> & 
+	P00/contador<10> & P00/contador<1> & P00/contador<2> & 
+	P00/contador<3> & P00/contador<4> & P00/contador<5> & 
+	P00/contador<6> & P00/contador<7> & P00/contador<8> & 
+	P00/contador<9> & P00/contador<11> & P00/contador<12> & 
+	P00/contador<13> & P00/contador<14> & P00/contador<15> & 
+	P00/contador<16> & P00/contador<17> & P00/contador<18> & 
+	P00/contador<19>;	// (1 pt, 21 inp)
+   P00/contador<21>.CLK  =  clk00;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk00
+
+MACROCELL | 13 | 5 | DISP_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 0
+EQ | 1 | 
+   DISP = Gnd;	// (0 pt, 0 inp)
+
+MACROCELL | 11 | 1 | DISPLAY<0>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+INPUTS | 19 | C<0>  | C<1>  | DISPLAY<0>  | E<8>  | E<9>  | E<7>  | DISPLAY<1>  | DISPLAY<2>  | DISPLAY<4>  | DISPLAY<5>  | DISPLAY<3>  | DISPLAY<6>  | E<6>  | E<5>  | E<4>  | E<3>  | E<2>  | E<1>  | E<0>
+INPUTMC | 7 | 11 | 1 | 9 | 13 | 9 | 5 | 11 | 10 | 9 | 15 | 11 | 12 | 9 | 11
+INPUTP | 12 | 168 | 171 | 177 | 175 | 204 | 207 | 212 | 214 | 1 | 4 | 7 | 10
+LCT | 2 | 1 | Internal_Name | 2 | Internal_Name
+EQ | 23 | 
+   DISPLAY<0> := !C<0>
+	$ !C<0> & C<1> & !DISPLAY<0>
+	# C<0> & C<1> & !E<8> & !E<9> & E<7>
+	# !C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & DISPLAY<0> & DISPLAY<3>
+	# !C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & !DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & !DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!DISPLAY<5> & !DISPLAY<0> & DISPLAY<6> & DISPLAY<3>
+	# DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & !C<1> & 
+	!DISPLAY<5> & DISPLAY<0> & DISPLAY<6> & DISPLAY<3>
+	# DISPLAY<1> & !DISPLAY<2> & DISPLAY<4> & !C<1> & 
+	!DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & !DISPLAY<3>
+	# !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & !C<1> & 
+	!DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & !DISPLAY<3>
+	# C<0> & C<1> & !E<6> & !E<5> & !E<4> & !E<8> & 
+	!E<9> & !E<3> & !E<2> & E<1>
+	# C<0> & C<1> & !E<6> & !E<5> & !E<4> & !E<8> & 
+	!E<9> & !E<3> & !E<2> & E<0>;	// (12 pt, 19 inp)
+    DISPLAY<0>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    DISPLAY<0>.AP = !CLR;	// CTS	(1 pt, 1 inp)
+
+MACROCELL | 9 | 13 | DISPLAY<1>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+INPUTS | 18 | C<0>  | DISPLAY<1>  | C<1>  | E<8>  | E<9>  | E<7>  | E<6>  | E<5>  | E<4>  | E<3>  | E<2>  | E<1>  | DISPLAY<2>  | DISPLAY<4>  | DISPLAY<5>  | DISPLAY<0>  | DISPLAY<6>  | DISPLAY<3>
+INPUTMC | 7 | 9 | 13 | 9 | 5 | 11 | 10 | 9 | 15 | 11 | 1 | 9 | 11 | 11 | 12
+INPUTP | 11 | 168 | 171 | 177 | 175 | 204 | 207 | 212 | 214 | 1 | 4 | 7
+LCT | 2 | 1 | Internal_Name | 2 | Internal_Name
+EQ | 29 | 
+   DISPLAY<1> := !C<0> & DISPLAY<1> & C<1>
+	# C<0> & C<1> & !E<8> & !E<9> & E<7>
+	# C<0> & C<1> & !E<6> & !E<5> & !E<4> & !E<8> & 
+	!E<9> & E<3>
+	# C<0> & C<1> & !E<6> & !E<5> & !E<4> & !E<8> & 
+	!E<9> & E<2>
+	# C<0> & C<1> & !E<6> & !E<5> & !E<4> & !E<8> & 
+	!E<9> & E<1>
+	# !C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!DISPLAY<5> & DISPLAY<0> & DISPLAY<6> & DISPLAY<3>
+	# DISPLAY<1> & !DISPLAY<2> & DISPLAY<4> & !C<1> & 
+	!DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & !DISPLAY<3>
+	# C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# C<0> & !DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & DISPLAY<6> & 
+	DISPLAY<3>
+	# C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>;	// (12 pt, 18 inp)
+    DISPLAY<1>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    DISPLAY<1>.AP = !CLR;	// CTS	(1 pt, 1 inp)
+
+MACROCELL | 9 | 5 | DISPLAY<2>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+INPUTS | 18 | C<0>  | DISPLAY<2>  | C<1>  | E<8>  | E<9>  | E<6>  | E<7>  | DISPLAY<1>  | DISPLAY<4>  | DISPLAY<5>  | DISPLAY<0>  | DISPLAY<3>  | DISPLAY<6>  | E<5>  | E<4>  | E<3>  | E<2>  | E<1>
+INPUTMC | 7 | 9 | 5 | 9 | 13 | 11 | 10 | 9 | 15 | 11 | 1 | 11 | 12 | 9 | 11
+INPUTP | 11 | 168 | 171 | 177 | 175 | 207 | 204 | 212 | 214 | 1 | 4 | 7
+LCT | 2 | 1 | Internal_Name | 2 | Internal_Name
+EQ | 25 | 
+   DISPLAY<2> := C<0>
+	$ !C<0> & DISPLAY<2> & C<1>
+	# C<0> & C<1> & E<8> & !E<9>
+	# C<0> & C<1> & E<6> & !E<9> & !E<7>
+	# C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & DISPLAY<0> & DISPLAY<3>
+	# C<0> & DISPLAY<2> & !DISPLAY<4> & !C<1> & 
+	!DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & !DISPLAY<3>
+	# C<0> & C<1> & !E<5> & !E<4> & !E<9> & !E<3> & 
+	E<2> & !E<7>
+	# C<0> & C<1> & !E<5> & !E<4> & !E<9> & !E<3> & 
+	!E<1> & !E<7>
+	# !C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & !DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!DISPLAY<5> & !DISPLAY<0> & DISPLAY<6> & DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<6> & !DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<0> & !DISPLAY<6> & !DISPLAY<3>
+	# !C<0> & DISPLAY<1> & !DISPLAY<2> & DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>;	// (13 pt, 18 inp)
+    DISPLAY<2>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    DISPLAY<2>.AP = !CLR;	// CTS	(1 pt, 1 inp)
+
+MACROCELL | 11 | 10 | DISPLAY<4>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+INPUTS | 19 | C<0>  | DISPLAY<4>  | C<1>  | DISPLAY<1>  | DISPLAY<2>  | DISPLAY<5>  | DISPLAY<0>  | DISPLAY<6>  | DISPLAY<3>  | E<6>  | E<5>  | E<4>  | E<8>  | E<9>  | E<3>  | E<2>  | E<7>  | E<1>  | E<0>
+INPUTMC | 7 | 11 | 10 | 9 | 13 | 9 | 5 | 9 | 15 | 11 | 1 | 9 | 11 | 11 | 12
+INPUTP | 12 | 168 | 171 | 207 | 212 | 214 | 177 | 175 | 1 | 4 | 204 | 7 | 10
+LCT | 2 | 1 | Internal_Name | 2 | Internal_Name
+EQ | 13 | 
+   DISPLAY<4> := !C<0> & DISPLAY<4> & C<1>
+	# C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# !C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & DISPLAY<0> & DISPLAY<6> & 
+	DISPLAY<3>
+	# C<0> & C<1> & !E<6> & !E<5> & !E<4> & !E<8> & 
+	!E<9> & !E<3> & E<2> & !E<7>
+	# C<0> & C<1> & !E<6> & !E<5> & !E<4> & !E<8> & 
+	!E<9> & !E<3> & !E<1> & !E<7> & !E<0>;	// (5 pt, 19 inp)
+    DISPLAY<4>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    DISPLAY<4>.AP = !CLR;	// CTS	(1 pt, 1 inp)
+
+MACROCELL | 9 | 15 | DISPLAY<5>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+INPUTS | 19 | C<0>  | C<1>  | DISPLAY<5>  | E<6>  | E<8>  | E<9>  | E<7>  | E<5>  | DISPLAY<1>  | DISPLAY<2>  | DISPLAY<4>  | DISPLAY<0>  | DISPLAY<6>  | DISPLAY<3>  | E<4>  | E<3>  | E<2>  | E<1>  | E<0>
+INPUTMC | 7 | 9 | 15 | 9 | 13 | 9 | 5 | 11 | 10 | 11 | 1 | 9 | 11 | 11 | 12
+INPUTP | 12 | 168 | 171 | 207 | 177 | 175 | 204 | 212 | 214 | 1 | 4 | 7 | 10
+LCT | 2 | 1 | Internal_Name | 2 | Internal_Name
+EQ | 18 | 
+   DISPLAY<5> := !C<0> & C<1> & DISPLAY<5>
+	# C<0> & C<1> & E<6> & !E<8> & !E<9> & !E<7>
+	# C<0> & C<1> & E<5> & !E<8> & !E<9> & !E<7>
+	# !C<0> & !DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & !DISPLAY<3>
+	# C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & DISPLAY<0> & !DISPLAY<6> & 
+	DISPLAY<3>
+	# C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & DISPLAY<6> & 
+	DISPLAY<3>
+	# C<0> & C<1> & !E<4> & !E<8> & !E<9> & !E<3> & 
+	!E<2> & !E<1> & !E<7> & !E<0>;	// (8 pt, 19 inp)
+    DISPLAY<5>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    DISPLAY<5>.AP = !CLR;	// CTS	(1 pt, 1 inp)
+
+MACROCELL | 9 | 11 | DISPLAY<6>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+INPUTS | 18 | C<0>  | C<1>  | DISPLAY<6>  | E<6>  | E<5>  | E<4>  | E<8>  | E<9>  | E<7>  | DISPLAY<1>  | DISPLAY<2>  | DISPLAY<4>  | DISPLAY<5>  | DISPLAY<0>  | DISPLAY<3>  | E<3>  | E<2>  | E<1>
+INPUTMC | 7 | 9 | 11 | 9 | 13 | 9 | 5 | 11 | 10 | 9 | 15 | 11 | 1 | 11 | 12
+INPUTP | 11 | 168 | 171 | 207 | 212 | 214 | 177 | 175 | 204 | 1 | 4 | 7
+LCT | 2 | 1 | Internal_Name | 2 | Internal_Name
+EQ | 19 | 
+   DISPLAY<6> := !C<0> & C<1> & DISPLAY<6>
+	# C<0> & C<1> & !E<6> & !E<5> & E<4> & !E<8> & 
+	!E<9> & !E<7>
+	# C<0> & DISPLAY<1> & !DISPLAY<2> & DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# C<0> & !DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# !C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# C<0> & C<1> & !E<6> & !E<5> & !E<8> & !E<9> & 
+	!E<3> & !E<2> & E<1> & !E<7>;	// (7 pt, 18 inp)
+    DISPLAY<6>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    DISPLAY<6>.AP = !CLR;	// CTS	(1 pt, 1 inp)
+
+MACROCELL | 11 | 12 | DISPLAY<3>_MC
+ATTRIBUTES | 2307130114 | 0
+OUTPUTMC | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+INPUTS | 18 | C<0>  | C<1>  | DISPLAY<3>  | E<8>  | E<9>  | E<7>  | E<6>  | E<5>  | E<4>  | DISPLAY<1>  | DISPLAY<2>  | DISPLAY<4>  | DISPLAY<5>  | DISPLAY<0>  | DISPLAY<6>  | E<3>  | E<2>  | E<1>
+INPUTMC | 7 | 11 | 12 | 9 | 13 | 9 | 5 | 11 | 10 | 9 | 15 | 11 | 1 | 9 | 11
+INPUTP | 11 | 168 | 171 | 177 | 175 | 204 | 207 | 212 | 214 | 1 | 4 | 7
+LCT | 2 | 1 | Internal_Name | 2 | Internal_Name
+EQ | 26 | 
+   DISPLAY<3> := !C<0> & C<1> & DISPLAY<3>
+	# C<0> & C<1> & !E<8> & !E<9> & E<7>
+	# C<0> & C<1> & !E<6> & !E<5> & E<4> & !E<8> & 
+	!E<9>
+	# C<0> & DISPLAY<1> & !DISPLAY<2> & DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# C<0> & !DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# C<0> & C<1> & !E<6> & !E<5> & !E<8> & !E<9> & 
+	!E<3> & !E<2> & E<1>
+	# !C<0> & DISPLAY<1> & DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & DISPLAY<5> & !DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>
+	# !C<0> & !DISPLAY<1> & !DISPLAY<2> & !DISPLAY<4> & 
+	!C<1> & !DISPLAY<5> & DISPLAY<0> & !DISPLAY<6> & 
+	!DISPLAY<3>;	// (10 pt, 18 inp)
+    DISPLAY<3>.CLK = CLK;	// CTC	(1 pt, 1 inp)
+    DISPLAY<3>.AP = !CLR;	// CTS	(1 pt, 1 inp)
+
+PIN | C<0> | 64 | 16 | LVCMOS33 | 168 | 7 | 11 | 1 | 9 | 5 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 13
+PIN | C<1> | 64 | 16 | LVCMOS33 | 171 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | clk00 | 16384 | 16 | LVCMOS33 | 59 | 23 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 5 | 0 | 3 | 0 | 2 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 13 | 3
+PIN | CLR | 64 | 16 | LVCMOS33 | 178 | 0
+PIN | E<6> | 64 | 16 | LVCMOS33 | 207 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | E<5> | 64 | 16 | LVCMOS33 | 212 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | E<4> | 64 | 16 | LVCMOS33 | 214 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | E<8> | 64 | 16 | LVCMOS33 | 177 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | E<9> | 64 | 16 | LVCMOS33 | 175 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | E<3> | 64 | 16 | LVCMOS33 | 1 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | E<2> | 64 | 16 | LVCMOS33 | 4 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | E<1> | 64 | 16 | LVCMOS33 | 7 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | E<7> | 64 | 16 | LVCMOS33 | 204 | 7 | 11 | 12 | 9 | 11 | 9 | 15 | 11 | 10 | 9 | 5 | 9 | 13 | 11 | 1
+PIN | E<0> | 64 | 16 | LVCMOS33 | 10 | 3 | 9 | 15 | 11 | 10 | 11 | 1
+PIN | CLK | 536871040 | 0 | LVCMOS33 | 107
+PIN | DISP | 536871040 | 0 | LVCMOS33 | 105
+PIN | DISPLAY<0> | 536871040 | 0 | LVCMOS33 | 152
+PIN | DISPLAY<1> | 536871040 | 0 | LVCMOS33 | 156
+PIN | DISPLAY<2> | 536871040 | 0 | LVCMOS33 | 160
+PIN | DISPLAY<3> | 536871040 | 0 | LVCMOS33 | 144
+PIN | DISPLAY<4> | 536871040 | 0 | LVCMOS33 | 146
+PIN | DISPLAY<5> | 536871040 | 0 | LVCMOS33 | 154
+PIN | DISPLAY<6> | 536871040 | 0 | LVCMOS33 | 158

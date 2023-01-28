@@ -1,0 +1,6 @@
+MESSAGE "File: C:\Documents and Settings\Art\Escritorio\Practica1\comparador\concurrente\concurrente.vhd" 
+MESSAGE "Compile Entity "multiplexor"" 
+MESSAGE "Compile Architecture "a_multiplexor" of Entity "multiplexor"" 
+MESSAGE "Top-Level unit detected" 
+MESSAGE "Entity  =>   multiplexor" 
+MESSAGE "Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [s]" 

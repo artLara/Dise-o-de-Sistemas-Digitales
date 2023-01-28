@@ -1,0 +1,2 @@
+concurrente.vhd #Entity multiplexor 4
+concurrente.vhd #Architecture a_multiplexor multiplexor 19

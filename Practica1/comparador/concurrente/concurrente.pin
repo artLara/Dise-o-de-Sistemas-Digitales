@@ -1,0 +1,25 @@
+Cypress Package: palc22v10d-25pc  PinOut File: concurrente.pin
+
+This file was created on 02/12/2019 at 20:46:55 
+by PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+==========
+a(1) in <> Enabled Normal 1 <> [User] 
+a(0) in <> Enabled Normal 2 <> [User] 
+b(1) in <> Enabled Normal 3 <> [User] 
+b(0) in <> Enabled Normal 4 <> [User] 
+c(1) in <> Enabled Normal 5 <> [User] 
+c(0) in <> Enabled Normal 6 <> [User] 
+d(1) in <> Enabled Normal 7 <> [User] 
+d(0) in <> Enabled Normal 8 <> [User] 
+ref(1) in <> Enabled Normal 9 <> [User] 
+ref(0) in <> Enabled Normal 10 <> [User] 
+display(0) out <> Enabled Normal 14 <> [User] 
+display(1) out <> Enabled Normal 16 <> [User] 
+display(2) inout <> Enabled Normal 17 <> [User] 
+display(3) out <> Enabled Normal 18 <> [User] 
+display(4) out <> Enabled Normal 19 <> [User] 
+display(5) inout <> Enabled Normal 20 <> [User] 
+display(6) out <> Enabled Normal 21 <> [User] 
+sel(0) in <> Enabled Normal 22 <> [User] 
+sel(1) in <> Enabled Normal 23 <> [User] 

@@ -1,0 +1,6 @@
+ENTITY datoentity IS
+    PORT (
+	ref : in std_logic_vector (1 downto 0) ; 
+	salida : inout std_logic_vector (6 downto 0)
+    ) ;
+END datoentity ;

@@ -1,0 +1,23 @@
+V3 10
+FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" 2019/05/01.17:23:57 P.68d
+EN work/div00 1556750233 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/div00/Behavioral 1556750234 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" \
+      EN work/div00 1556750233
+FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/flipFlop.vhd" 2019/03/27.21:10:34 P.68d
+EN work/flipFlop 1553743495 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/flipFlop.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/flipFlop/Behavioral 1553743496 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/flipFlop.vhd" \
+      EN work/flipFlop 1553743495
+FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/pruebota.vhd" 2019/03/28.14:49:35 P.68d
+EN work/pruebota 1556750235 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/pruebota.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/pruebota/Behavioral 1556750236 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/pruebota.vhd" \
+      EN work/pruebota 1556750235 CP div00

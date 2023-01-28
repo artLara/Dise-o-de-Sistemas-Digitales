@@ -1,0 +1,16 @@
+V3 7
+FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" 2019/05/29.13:37:53 P.68d
+EN work/div00 1559155150 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/div00/Behavioral 1559155151 \
+      FL "D:/Documentos/ESCOM/DSD/Nueva carpeta/proyectoMio/div00.vhd" \
+      EN work/div00 1559155150
+FL D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.vhd 2019/05/28.19:31:51 P.68d
+EN work/teclado 1559155152 \
+      FL D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/teclado/Behavioral 1559155153 \
+      FL D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.vhd \
+      EN work/teclado 1559155152 CP div00

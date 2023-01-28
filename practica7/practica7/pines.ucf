@@ -1,0 +1,41 @@
+# CLOCKS #
+##########
+## PCLK (On-board 8MHz oscillator) -- P38 ##
+NET "clk00"					LOC = "P38";
+NET "clk00"					IOSTANDARD = LVCMOS33;
+
+## Pmod 1
+##Abajo
+NET "E(3)"				LOC = "P9";
+NET "E(3)"				IOSTANDARD = LVCMOS33;
+NET "E(2)"				LOC = "P6";
+NET "E(2)"				IOSTANDARD = LVCMOS33;
+NET "E(1)"				LOC = "P4";
+NET "E(1)"				IOSTANDARD = LVCMOS33;
+NET "E(0)"				LOC = "P2";
+NET "E(0)"				IOSTANDARD = LVCMOS33;
+
+## Pmod 2
+##
+NET "C(2)"				LOC = "P140";
+NET "C(2)"				IOSTANDARD = LVCMOS33;
+NET "C(1)"				LOC = "P138";
+NET "C(1)"				IOSTANDARD = LVCMOS33;
+NET "C(0)"				LOC = "P135";
+NET "C(0)"				IOSTANDARD = LVCMOS33;
+NET "CLR"				LOC = "P133";
+NET "CLR"				IOSTANDARD = LVCMOS33;
+
+NET "clk"		LOC = "P69";
+NET "clk"		IOSTANDARD = LVCMOS33;
+
+## Pmod 4
+##
+NET "Q(3)"				LOC = "P103";
+NET "Q(3)"				IOSTANDARD = LVCMOS33;
+NET "Q(2)"				LOC = "P101";
+NET "Q(2)"				IOSTANDARD = LVCMOS33;
+NET "Q(1)"				LOC = "P98";
+NET "Q(1)"				IOSTANDARD = LVCMOS33;
+NET "Q(0)"				LOC = "P96";
+NET "Q(0)"				IOSTANDARD = LVCMOS33;

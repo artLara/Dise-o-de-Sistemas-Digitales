@@ -1,0 +1,69 @@
+##########
+# CLOCKS #
+##########
+## PCLK (On-board 8MHz oscillator) -- P38 ##
+NET "clk00"					LOC = "P38";
+NET "clk00"					IOSTANDARD = LVCMOS33;
+#NET "clk00"					BUFG = CLK;
+#NET "clk00"					COOL_CLK;
+
+## Pmod 1
+##
+NET "ENT(7)"				LOC = "P9";
+NET "ENT(7)"				IOSTANDARD = LVCMOS33;
+NET "ENT(6)"				LOC = "P6";
+NET "ENT(6)"				IOSTANDARD = LVCMOS33;
+NET "ENT(5)"				LOC = "P4";
+NET "ENT(5)"				IOSTANDARD = LVCMOS33;
+NET "ENT(4)"				LOC = "P2";
+NET "ENT(4)"				IOSTANDARD = LVCMOS33;
+
+## Pmod 2
+##
+NET "ENT(3)"				LOC = "P140";
+NET "ENT(3)"				IOSTANDARD = LVCMOS33;
+NET "ENT(2)"				LOC = "P138";
+NET "ENT(2)"				IOSTANDARD = LVCMOS33;
+NET "ENT(1)"				LOC = "P135";
+NET "ENT(1)"				IOSTANDARD = LVCMOS33;
+NET "ENT(0)"				LOC = "P133";
+NET "ENT(0)"				IOSTANDARD = LVCMOS33;
+
+## Pmod 3
+##
+NET "SEL(1)"				LOC = "P118";
+NET "SEL(1)"				IOSTANDARD = LVCMOS33;
+NET "SEL(0)"				LOC = "P116";
+NET "SEL(0)"				IOSTANDARD = LVCMOS33;
+NET "CLR"				LOC = "P114";
+NET "CLR"				IOSTANDARD = LVCMOS33;
+
+## Pmod 4
+##
+NET "Q(7)"				LOC = "P103";
+NET "Q(7)"				IOSTANDARD = LVCMOS33;
+NET "Q(6)"				LOC = "P101";
+NET "Q(6)"				IOSTANDARD = LVCMOS33;
+NET "Q(5)"				LOC = "P98";
+NET "Q(5)"				IOSTANDARD = LVCMOS33;
+NET "Q(4)"				LOC = "P96";
+NET "Q(4)"				IOSTANDARD = LVCMOS33;
+
+NET "Q(3)"				LOC = "P104";
+NET "Q(3)"				IOSTANDARD = LVCMOS33;
+NET "Q(2)"				LOC = "P102";
+NET "Q(2)"				IOSTANDARD = LVCMOS33;
+NET "Q(1)"				LOC = "P100";
+NET "Q(1)"				IOSTANDARD = LVCMOS33;
+NET "Q(0)"				LOC = "P97";
+NET "Q(0)"				IOSTANDARD = LVCMOS33;
+
+NET "clk"		LOC = "P69";
+NET "clk"		IOSTANDARD = LVCMOS33;
+
+NET "entS"		LOC = "P68";
+NET "entS"		IOSTANDARD = LVCMOS33;
+
+
+NET "LED"				LOC = "P7";
+NET "LED"				IOSTANDARD = LVCMOS33;

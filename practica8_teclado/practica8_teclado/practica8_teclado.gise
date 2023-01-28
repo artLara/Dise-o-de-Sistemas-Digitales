@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="practica8_teclado.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="teclado.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="teclado.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="teclado.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="teclado.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="teclado.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="teclado.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="teclado.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="teclado.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="teclado.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="teclado.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="teclado.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="teclado.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="teclado.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="teclado.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="teclado.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="teclado.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="teclado.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="teclado.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="teclado.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="teclado.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="teclado.tspec"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="teclado.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="teclado.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="teclado.xst"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="teclado_build.xml"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="teclado_envsettings.html"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="teclado_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="teclado_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="teclado_pad.csv"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="teclado_summary.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="teclado_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="teclado_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1559155149" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1559155149">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1559155149" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1568689284215196294" xil_pn:start_ts="1559155149">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1559155156" xil_pn:in_ck="3716418497911730764" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="4758386702961655580" xil_pn:start_ts="1559155149">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="teclado.lso"/>
+      <outfile xil_pn:name="teclado.ngc"/>
+      <outfile xil_pn:name="teclado.ngr"/>
+      <outfile xil_pn:name="teclado.prj"/>
+      <outfile xil_pn:name="teclado.stx"/>
+      <outfile xil_pn:name="teclado.syr"/>
+      <outfile xil_pn:name="teclado.xst"/>
+      <outfile xil_pn:name="teclado_vhdl.prj"/>
+      <outfile xil_pn:name="teclado_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1559155156" xil_pn:in_ck="162138854071659" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7134679009763083660" xil_pn:start_ts="1559155156">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1559155161" xil_pn:in_ck="9062846101066123597" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="2820029809837737375" xil_pn:start_ts="1559155156">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="teclado.bld"/>
+      <outfile xil_pn:name="teclado.ngd"/>
+      <outfile xil_pn:name="teclado_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1559155173" xil_pn:in_ck="182494688779666627" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="-3523199740567203643" xil_pn:start_ts="1559155161">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="teclado.chk"/>
+      <outfile xil_pn:name="teclado.cxt"/>
+      <outfile xil_pn:name="teclado.gyd"/>
+      <outfile xil_pn:name="teclado.log"/>
+      <outfile xil_pn:name="teclado.mfd"/>
+      <outfile xil_pn:name="teclado.nga"/>
+      <outfile xil_pn:name="teclado.pad"/>
+      <outfile xil_pn:name="teclado.pnx"/>
+      <outfile xil_pn:name="teclado.rpt"/>
+      <outfile xil_pn:name="teclado.tim"/>
+      <outfile xil_pn:name="teclado.tspec"/>
+      <outfile xil_pn:name="teclado.vm6"/>
+      <outfile xil_pn:name="teclado.xml"/>
+      <outfile xil_pn:name="teclado_build.xml"/>
+      <outfile xil_pn:name="teclado_html"/>
+      <outfile xil_pn:name="teclado_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1559155176" xil_pn:in_ck="182494688779675491" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1559155173">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="teclado.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1559577046" xil_pn:in_ck="182494688779662205" xil_pn:name="TRAN_configureTargetDevice_CPLD" xil_pn:prop_ck="-3223234765801749484" xil_pn:start_ts="1559577045">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1557705575" xil_pn:in_ck="182494688779675491" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1557705572">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
+
+</generated_project>

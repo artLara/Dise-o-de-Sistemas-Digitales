@@ -1,0 +1,105 @@
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+taengine -intstyle ise -f teclado -w --format html1 -l teclado_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i teclado 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+hprep6 -s IEEE1149 -i teclado 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+hprep6 -s IEEE1149 -i teclado 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+hprep6 -s IEEE1149 -i teclado 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+hprep6 -s IEEE1149 -i teclado 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+hprep6 -s IEEE1149 -i teclado 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+hprep6 -s IEEE1149 -i teclado 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+hprep6 -s IEEE1149 -i teclado 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+hprep6 -s IEEE1149 -i teclado 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+xst -intstyle ise -ifn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.xst" -ofn "D:/Documentos/ESCOM/DSD/practica8_teclado/practica8_teclado/teclado.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pines.ucf -p xc2c256-TQ144-6 teclado.ngc teclado.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 teclado.ngd 
+XSLTProcess teclado_build.xml 
+tsim -intstyle ise teclado teclado.nga 
+hprep6 -s IEEE1149 -i teclado 
